@@ -61,6 +61,11 @@ app.get('/api/login',async (req,res)=>{
     }
     catch(err){
          console.log("Log in error",err);
+         res.json({
+          status: "Error",
+          message:"Enter correct details.",
+          statusCode: 406,
+     })
     }
 })
 
