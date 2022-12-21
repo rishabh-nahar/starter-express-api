@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGO_URI,(err,res)=>{
 })
 
 // API to test connection with backend - localhost:8081/test
-app.get('/test',(req,res)=>{
+app.get('/',(req,res)=>{
      res.json({'status':"connected"})
      console.log("Connected");
 })
